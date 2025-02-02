@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #4B0082;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.container{
+  font-weight: 250px;
+  margin-top:5px;
+  height: 597px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: #6A5ACD;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgda(0,0,0,0.2);
+  max-width: 600px;
+}
+.header{
+  
+  background-size: 100% 100%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+  height:250px ;
+  width: 250px;
+}
+.logo{
+  text-align:center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.landing-content{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.landing-content h1{
+  margin-bottom: 10px;
+  font-size: 1.8em;
+
+}
+.landing-content button{
+  background-color: #FFD700;
+  color: #dcb6f7;
+  padding: 8px 16px;
+  border:2px solid black;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.landing-content button:hover{
+  background-color: #FFA500;
+  
+}
+.image-area{
+  width: 80%;
+  margin-top: 0px;
+  max-width: 300px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius:10px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-group{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.input-group label{
+  margin-right: 10px;
+}
+.input-group img{
+  width: 20px;
+  height: 20px;
+}
+.input-group input{
+  border: none;
+  flex-grow: 1;
+  background: transparent;
+}
+
+.content button { /* More specific style for the register button */
+    background-color: #FFD700; /* Example: Gold button */
+      color: #4B0082; /* Indigo text */
+        padding: 15px; /* Larger padding for the circle button */
+          border: none;
+            border-radius: 50%; /* Make it circular */
+              font-size: 1.2em;
+                cursor: pointer;
+                  align-self: center; /* Center the button */
+                    margin-top: 10px;
+}
+
+.content button img {
+      width: 20px;
+          height: 20px;
+          }
+
+
+          /* Media Queries for Responsiveness */
+ @media (max-width: 768px) { /* Tablet and smaller screens */
+  .container {
+           padding: 15px;
+              }
+
+ .logo {
+   font-size: 1.6em;
+     }
+
+  .landing-content h1 {
+   font-size: 1.5em;
+                      }
+
+   .landing-content button {
+    font-size: 0.9em;
+     padding: 6px 12px;
+                          }
+
+      .image-area {
+       width: 90%; /* Image takes up more space */
+                }
+
+  .content button {
+       font-size: 0.9em;
+       padding: 12px; /* Adjust as needed */
+                                  }
+                                  }
+
+ @media (max-width: 480px) { /* Smaller mobile screens */
+.container {
+         padding: 10px;
+         }
+
+.logo {
+   font-size: 1.4em;
+    }
+
+  .landing-content h1 {
+     font-size: 1.2em;
+    }
+
+ .landing-content button {
+  font-size: 0.8em;
+    padding: 4px 8px;
+   }
+
+.image-area {
+   width: 100%; /* Image takes full width */
+          }
+
+.content button {
+   font-size: 0.8em;
+  padding: 10px; /* Adjust as needed */
+     } 
+    }
